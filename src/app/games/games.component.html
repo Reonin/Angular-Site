@@ -1,0 +1,32 @@
+
+
+
+
+<div class="container">
+
+  <div class="row">
+
+  <img src="../assets/RR_GAMES_FINAL.png" alt="" height="100" class="rounded mx-auto d-block">
+
+
+  </div>
+
+  <div class="row">
+
+  <div class="card mx-auto mt-4" style="width: 18rem;" *ngFor="let game of games | async">
+  <img src="{{game.image}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{game.title}}</h5>
+    <p class="card-text">{{game.description}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Made on {{game.date.seconds * 1000 | date:'MM-dd-yyyy'}}</li>
+    <li class="list-group-item">By {{game.team}}</li>
+  </ul>
+  <div class="card-body align-items-center d-flex justify-content-center">
+    <a href="{{game.link}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">See more</a>
+  </div>
+
+</div>
+</div>
+</div>

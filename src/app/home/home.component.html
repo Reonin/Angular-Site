@@ -1,0 +1,38 @@
+<ngb-carousel *ngIf="images">
+  <ng-template ngbSlide>
+    <img [src]="images[0]" alt="Random first slide" class="d-block w-100">
+    <div class="carousel-caption">
+      <h3>Experimental Inputs</h3>
+      <p>"Thar She Blows" a game using microphone volume and a steering wheel</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img [src]="images[1]" alt="Random second slide" class="d-block w-100">
+    <div class="carousel-caption">
+      <h3>Brand fidelity</h3>
+      <p>An entry for the Unity x Universal game design competition</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img [src]="images[2]" alt="Random third slide" class="d-block w-100">
+    <div class="carousel-caption">
+      <h3>Leaving an impact</h3>
+      <p>Passion project called Incubate a spiritual successor to Embryonic</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+<div class="jumbotron jumbotron-fluid text-center">
+  <h1 class="display-4">Welcome to my new site</h1>
+  <p class="lead">A Nexus for web, game and community development. </p>
+  <hr class="my-4">
+  <figure class="figure">
+  <img src="../assets/voltronQC.PNG" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+  <figcaption class="figure-caption">A competition project from Universal and Unity</figcaption>
+</figure>
+  <p>Game Design Document</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="https://drive.google.com/open?id=18BJV7vlTd7j3XYPBs_wyA5gLX731lE9R" role="button">Learn more</a>
+  </p>
+
+
+</div>
